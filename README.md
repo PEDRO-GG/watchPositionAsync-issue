@@ -18,3 +18,4 @@
 6. Clean: `npx expo prebuild --clean`
 7. Run the app: `npx expo run:ios`
 8. In your IOS simulator, simulate a location changing: `Features -> Location -> Freeway Drive`
+9. You will only get one update.
