@@ -4,7 +4,7 @@
 2. Install dev client: `npx expo install expo-dev-client`
 3. Reset: `npm run reset-project`
 4. Install expo-location: `npx expo install expo-location`
-5. Add this to your app.json:
+5. Add this to your app.json, so we can request foreground permissions:
 
 ```json
 [
@@ -17,3 +17,4 @@
 
 6. Clean: `npx expo prebuild --clean`
 7. Run the app: `npx expo run:ios`
+8. In your IOS simulator, simulate a location changing: `Features -> Location -> Freeway Drive`
