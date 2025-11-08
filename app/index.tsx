@@ -30,7 +30,10 @@ export default function Index() {
     const newSubscription = await Location.watchPositionAsync(
       {},
       (location) => {
-        console.log("Foreground location update: ", location);
+        console.log("Foreground location update: ", {
+          latitude: location.coords.latitude,
+          longitude: location.coords.longitude,
+        });
         setUserLocation({
           latitude: location.coords.latitude,
           longitude: location.coords.longitude,
